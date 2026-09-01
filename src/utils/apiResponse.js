@@ -5,4 +5,4 @@ const apiResponse =(statusCode,data=null,message="")=>({
     message
 });
 
-module.exports=apiResponse;
+module.exports = apiResponse;

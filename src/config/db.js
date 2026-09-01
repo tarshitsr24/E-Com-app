@@ -4,10 +4,10 @@ dns.setServers(["8.8.8.8", "8.8.4.4"]);
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const connectDB = async () => {
-  await mongoose.connect(process.env.MONGO_URI);
+const connectDB = async()=>{
+    await mongoose.connect(process.env.MONGO_URI);
 
-  console.log("Database connnection established");
-};
+    console.log(`database connnection stablished `)
+}
 
-module.exports = connectDB;
+module.exports=connectDB;
